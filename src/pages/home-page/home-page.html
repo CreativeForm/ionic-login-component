@@ -1,0 +1,55 @@
+<!--- Header -->
+<ion-header>
+  <ion-navbar padding>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img padding src="assets/images/csform-logo.png" />
+    <button ion-button float-right onClick="window.open('https://csform.com/product/premium-login-component-for-ionic-free-sample/');">
+      GET IT FOR FREE
+    </button>
+  </ion-navbar>
+</ion-header>
+<!--- Content -->
+<ion-content>
+  <ion-grid>
+    <ion-row padding-horizontal no-margin>
+      <ion-col>
+        <ion-item text-center no-padding margin-vertical background-size no-lines *ngFor="let p of pages">
+          <button menuClose text-center transparent ion-item (click)="openPage(p)">
+        {{p.title}}
+      </button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row description padding-horizontal justify-content-center>
+      <ion-col border col-12>
+        <a href="https://csform.com/product/premium-login-component-for-ionic-three-themes/?_ga=2.122725515.1649954292.1523877185-1914786605.1522238104">Check full premium <br> version here</a>
+      </ion-col>
+    </ion-row>
+    <ion-row ionic-app padding-horizontal justify-content-center>
+      <ion-col col-12>
+        <h3>Check ours templates here</h3>
+      </ion-col>
+      <ion-col col-4 text-right>
+        <a href="https://play.google.com/store/apps/details?id=com.csform.ionic.blue">
+                  <img src="assets/images/ionic-3-light-blue.png" />
+                </a>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <a href="https://play.google.com/store/apps/details?id=com.csform.ionic.yellow">
+                  <img src="assets/images/ionic-3-dark-yellow.png" />
+                </a>
+      </ion-col>
+      <ion-col col-4 text-left>
+        <a href="https://play.google.com/store/apps/details?id=com.csform.ionic.green.light">
+                  <img src="assets/images/ionic-3-green-light.png" />
+                </a>
+      </ion-col>
+      <!-- Description text -->
+      <ion-col col-12>
+        <p>For better understanding how our templates works <br> please <a href="https://csform.com/documentation-for-premium-login-component-for-ionic-three-themes/?_ga=2.221278872.1811753998.1522228601-994309764.1514560507">read our documentation</a></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

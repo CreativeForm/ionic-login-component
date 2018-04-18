@@ -1,0 +1,99 @@
+home-page {
+  /* Settings Header
+  =====================*/
+
+  ion-navbar {
+    img {
+      padding-top: 25px !important;
+      height: 60px;
+    }
+
+    button {
+      min-height: 57px;
+      border-radius: 8px !important;
+      letter-spacing: 1px;
+      padding: 20px 10px !important;
+      font-size: 12px !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .header-ios::after,
+  .header-md::after {
+    background-image: none !important;
+  }
+
+  .header-ios .toolbar-background-ios {
+    border-color: transparent !important;
+  }
+
+  .toolbar-background-ios,
+  .toolbar-background-md {
+    border-color: #fff;
+    background: #fff;
+  }
+
+  /* Settings Background-size
+  ================================*/
+  [background-size] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  [transparent] {
+    background-color: transparent !important;
+    padding: 20px 0;
+  }
+
+  /* Settings Main Menu
+  ================================*/
+  ion-item {
+    border: 1px solid #ccc !important;
+
+    ion-label {
+      margin: 0 !important;
+    }
+
+    button {
+      color: #687DFC;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+
+ion-content {
+
+  ion-grid {
+      height: 100%;
+      display: inline-grid !important;
+  }
+    h3 {
+      color: #CCCCCC;
+      font-size: 24px;
+  }
+
+ [description] {
+
+   [border] {
+     border-bottom: 1px solid #ccc
+   }
+   a {
+      font-size: 24px;
+      color: #4F4F4F;
+      font-weight: bold;
+      padding: 20px 0 40px 0;
+      display: block;
+   }
+ }
+
+  /* Settings Text Footer
+  ================================*/
+  p , a{
+    color: #687DFC;
+    font-size: 12px;
+    }
+  }
+
+}
